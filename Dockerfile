@@ -1,16 +1,9 @@
-FROM renovate/base
+FROM renovate/ruby:2.6.0
 
 USER root
 
-RUN apt-get update && apt-get install -y ruby-full
-RUN ruby --version
+RUN gem install --no-document bundler -v 2.0.1
 
-RUN gem update --system
-RUN gem --version
-
-RUN gem install bundler
-RUN bundler --version
-
-RUN chmod -R a+w /var/lib/gems
+RUN chmod -R a+w /usr/local/lib/ruby/gems
 
 USER ubuntu
