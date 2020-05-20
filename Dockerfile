@@ -1,4 +1,4 @@
-FROM renovate/ruby:2.6.0@sha256:b7b056404b8e82697beef1e0431db61917af7324d0f0c6028c25fa6464b93eab
+FROM renovate/ruby:2.6.0@sha256:9e238f6b7cce5dda63666d19f146dd96c202c1532d3b20714ec557ac9fd1c706
 
 USER root
 
